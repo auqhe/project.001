@@ -1,0 +1,191 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{a4paper, landscape, margin=1cm}
+
+\begin{document}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{4cm}|p{3cm}|p{3cm}|p{3.5cm}|}
+\hline
+\textbf{Ref.} & \textbf{Dataset} & \textbf{Methodology} & \textbf{Evaluation Metrics} & \textbf{Results} & \textbf{Gap Analysis} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Ref.} & \textbf{Dataset} & \textbf{Methodology} & \textbf{Evaluation Metrics} & \textbf{Results} & \textbf{Gap Analysis} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+Karpakam, S., Kumareshan, 2025[] & 
+\begin{itemize}
+\item FigShare
+\item MRI
+\item X-ray
+\end{itemize} & 
+\begin{itemize}
+\item Adaptive median-bilateral filtering
+\item DSAS
+\item GLCM
+\item CDA features
+\item DIR-GAN with attention-residual connections
+\end{itemize} & 
+\begin{itemize}
+\item Accuracy
+\item Precision
+\item Recall
+\item F1
+\end{itemize} & 
+98.90\% FigShare, 98.60\% MRI, 97.93\% X-ray & 
+\begin{itemize}
+\item Focus on synthetic image quality
+\item Lacks cross-institutional clinical validation
+\end{itemize} \\
+\hline
+
+Zahid Ullah, Jihie Kim, 2025[] & 
+\begin{itemize}
+\item Two public Kaggle MRI sets
+\end{itemize} & 
+\begin{itemize}
+\item Dual-level ensembling
+\item Feature-level fusion of V16 classifier-level ensemble with optimized ML
+\end{itemize} & 
+\begin{itemize}
+\item Accuracy
+\item AUC reported
+\end{itemize} & 
+Outperforms SOTA (exact number not stated in abstract) & 
+\begin{itemize}
+\item Pre-print: lacks peer review
+\item Clinical test-time deployment
+\item limited dataset diversity
+\end{itemize} \\
+\hline
+
+Muhammad Usman Akbar et al., 2024[7] & 
+\begin{itemize}
+\item BraTS 2020: 369 subjects
+\item BraTS 2021: 1251 subjects
+\item MR modalities: T1w, T1wCe, T2w, and FLAIR
+\end{itemize} & 
+\begin{itemize}
+\item Progressive GAN, StyleGAN (G1--G3), and diffusion models
+\item Synthetic MR image generation
+\item U-Net and Swin Transformer for segmentation
+\end{itemize} & 
+\begin{itemize}
+\item Dice Score
+\item Hausdorff Distance
+\item Fréchet Inception Distance (FID)
+\item Inception Score (IS)
+\end{itemize} & 
+Synthetic images trained on GANs achieved Dice scores of 91\%--100\% & 
+\begin{itemize}
+\item Memorization of training data
+\item Metric limitations
+\item High computational cost
+\item Impact of hyperparameters
+\item Data variability
+\end{itemize} \\
+\hline
+
+(Alshwan, Nasser et al., 2024)[P*] & 
+\begin{itemize}
+\item BrSHI Brain MRI: non-tumorous
+\item Yes: 1500 tumorous images
+\item No: 1500 non-tumorous images
+\item Pred: 60 images for testing/prediction
+\end{itemize} & 
+\begin{itemize}
+\item Synthetic Generative Adversarial Networks (GANs)
+\item Federated Convolutional Neural Networks (CNNs)
+\end{itemize} & 
+\begin{itemize}
+\item Sensitivity
+\item Specificity
+\item Precision
+\item F1 Score
+\end{itemize} & 
+Accuracy of 99.82\% achieved using DenseNet121 for feature extraction and classification. & 
+\begin{itemize}
+\item Low accuracy
+\item Data scarcity
+\item Privacy issues
+\end{itemize} \\
+\hline
+
+Wenxiu Wang et al., 2023[?] & 
+\begin{itemize}
+\item BraTS 2020: 369 patients
+\item ICTS: 192 T1ce MR patients
+\item In-house Dataset: 50 glioma patients
+\end{itemize} & 
+\begin{itemize}
+\item Two-Stage Generative Model (TSGM)
+\item CycleGAN + Variance Exploding Joint Probability (VE-JP) diffusion model
+\end{itemize} & 
+\begin{itemize}
+\item Dice Similarity Coefficient (DSC)
+\item Precision
+\item Recall
+\item Area Under the Precision-Recall Curve (AUPRC)
+\item Intersection over Union (IoU)
+\item Hausdorff95 Distance (HD95)
+\end{itemize} & 
+Achieved a SC of 85.9\% on BraTS2020, surpassing traditional methods with accurate segmentation of complex tumor boundaries. & 
+\begin{itemize}
+\item Improve edge detection for complex anatomical regions
+\item Optimize multi-modality data integration
+\item Enhance computational efficiency for faster image generation
+\item Better utilize multi-channel data to reduce interference
+\item Expand validation across diverse datasets and clinical conditions
+\end{itemize} \\
+\hline
+
+Shubham Chitnis et al., 2022[?] & 
+\begin{itemize}
+\item Brain Tumor Classification (Kaggle): 3264 MRI scans
+\item Classes:
+\begin{itemize}
+\item Glioma
+\item Meningioma
+\item Pituitary Tumor
+\item Healthy
+\end{itemize}
+\end{itemize} & 
+\begin{itemize}
+\item Learning-by-Self-Explanation (LaSE)
+\item MRI-based tumor classification
+\item Differentiable architecture search
+\item Four-level optimization for efficient neural design
+\end{itemize} & 
+\begin{itemize}
+\item Accuracy
+\item Precision
+\item Recall
+\item F1 Score
+\item Area Under Curve (AUC)
+\item Specificity
+\end{itemize} & 
+Test Accuracy: 90.6\% \\
+AUC: 95.6\% \\
+Model Size: 3.78 million parameters \\
+Result: Outperformed human-designed and NAS-based methods & 
+\begin{itemize}
+\item Focuses only on MRI-based neural architecture optimization
+\item Does not incorporate multi-modal data (e.g., medical history, lab results)
+\item May limit classification accuracy and clinical applicability
+\end{itemize} \\
+\hline
+
+\end{longtable}
+
+\end{document}
