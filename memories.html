@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Beautiful Memories ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="memories.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Our Story</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li><a href="memories.html" class="nav-link active">Memories</a></li>
+                <li><a href="index.html#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Memories Hero Section -->
+    <section class="memories-hero">
+        <div class="memories-hero-content">
+            <div class="floating-hearts">
+                <i class="fas fa-heart heart-1"></i>
+                <i class="fas fa-heart heart-2"></i>
+                <i class="fas fa-heart heart-3"></i>
+                <i class="fas fa-heart heart-4"></i>
+                <i class="fas fa-heart heart-5"></i>
+            </div>
+            
+            <h1 class="memories-title">Our Beautiful Memories</h1>
+            <p class="memories-subtitle">Every moment with you is a treasure worth keeping forever</p>
+            
+            <div class="memory-stats">
+                <div class="memory-stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Precious Moments</div>
+                </div>
+                <div class="memory-stat">
+                    <div class="stat-number">365</div>
+                    <div class="stat-label">Days of Joy</div>
+                </div>
+                <div class="memory-stat">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Perfect Love</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Photo Gallery</h2>
+                <div class="heart-divider">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p>Click on any photo to view it in full size</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Memories</button>
+                <button class="filter-btn" data-filter="dates">Romantic Dates</button>
+                <button class="filter-btn" data-filter="travel">Adventures</button>
+                <button class="filter-btn" data-filter="special">Special Moments</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="dates">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Romantic Date" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>First Date</h3>
+                                <p>The beginning of our beautiful journey</p>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Adventure Together" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Mountain Adventure</h3>
+                                <p>Exploring the world hand in hand</p>
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Special Celebration" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Anniversary</h3>
+                                <p>Celebrating our love milestone</p>
+                                <i class="fas fa-calendar-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dates">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sunset Together" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sunset Moments</h3>
+                                <p>Watching the world painted in gold</p>
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Beach Vacation" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Beach Getaway</h3>
+                                <p>Sun, sand, and endless love</p>
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cozy Evening" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Cozy Evening</h3>
+                                <p>Perfect moments at home</p>
+                                <i class="fas fa-home"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dates">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1518049362265-d5b2a6467637?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="City Date" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>City Exploration</h3>
+                                <p>Discovering new places together</p>
+                                <i class="fas fa-city"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mountain View" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Peak Moments</h3>
+                                <p>Love as high as the mountains</p>
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Garden Walk" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Garden Stroll</h3>
+                                <p>Love blooming like flowers</p>
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Slideshow -->
+    <section class="memory-slideshow">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Memories</h2>
+                <div class="heart-divider">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Our Love Story">
+                    </div>
+                    <div class="slide-content">
+                        <h3>The Day We Met</h3>
+                        <p>It was a beautiful spring day when our eyes first met across the crowded café. Time seemed to stop, and I knew my life was about to change forever. Your smile was like sunshine breaking through clouds, warming my heart in ways I never thought possible.</p>
+                        <div class="slide-date">March 15, 2023</div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Adventure Together">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Our First Adventure</h3>
+                        <p>Remember our first hiking trip together? We got lost for hours, but neither of us minded because we were together. We laughed, we talked, we shared our dreams under the starlit sky. That's when I knew you were my perfect adventure partner.</p>
+                        <div class="slide-date">June 20, 2023</div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Beach Memories">
+                    </div>
+                    <div class="slide-content">
+                        <h3>Beach Sunset</h3>
+                        <p>Our romantic getaway to the beach was magical. We walked hand in hand along the shore, collected seashells, and watched the most beautiful sunset. As the sun dipped below the horizon, you whispered "I love you" for the first time.</p>
+                        <div class="slide-date">August 12, 2023</div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slide-nav prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slide-nav next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Slide Indicators -->
+                <div class="slide-indicators">
+                    <span class="indicator active" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letters Section -->
+    <section class="love-letters">
+        <div class="container">
+            <div class="section-header">
+                <h2>Love Letters</h2>
+                <div class="heart-divider">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="letters-grid">
+                <div class="letter-card">
+                    <div class="letter-header">
+                        <i class="fas fa-envelope"></i>
+                        <span class="letter-date">To My Beloved</span>
+                    </div>
+                    <div class="letter-content">
+                        <p>"My dearest love, every morning I wake up grateful for another day to love you. Your laughter is my favorite melody, your smile my daily sunshine. Thank you for being the most beautiful part of my story."</p>
+                    </div>
+                    <div class="letter-signature">Forever yours ❤️</div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-header">
+                        <i class="fas fa-heart"></i>
+                        <span class="letter-date">My Heart's Song</span>
+                    </div>
+                    <div class="letter-content">
+                        <p>"In a world full of temporary things, you are my constant. Your love is the anchor that keeps me grounded and the wings that help me soar. I love you more than words can express."</p>
+                    </div>
+                    <div class="letter-signature">With all my love 💕</div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-header">
+                        <i class="fas fa-star"></i>
+                        <span class="letter-date">My Wish Come True</span>
+                    </div>
+                    <div class="letter-content">
+                        <p>"They say when you wish upon a star, your dreams come true. I must have wished on every star in the sky because I found you - my dream, my reality, my everything."</p>
+                    </div>
+                    <div class="letter-signature">Eternally yours ✨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Full-Size Images -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div id="modalCaption"></div>
+            <button class="modal-nav prev" onclick="modalPrevImage()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="modal-nav next" onclick="modalNextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Made with <i class="fas fa-heart"></i> for our eternal love story</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="memories.js"></script>
+</body>
+</html>
